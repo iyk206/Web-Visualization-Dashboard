@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- CSS and Bootstrap) -->
+    <meta charset= "UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Bootstrap Visualization Dashboard</title>
+    <!-- Navigation Bar setup   -->
+    <nav class="navbar navbar-expand-md navbar-light fixed-top bg-white">
+        <!-- Insert Logo -->
+        <div class="container-fluid">
+          <a class="navbar-brand text-white bg-info" href="index.html"><strong>Latitude</strong>
+          </a>
+      
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-info" href="#" id="navbarDropdown" data-toggle="dropdown" 
+                    aria-haspopup="true" aria-expanded="false"><strong>Plots</strong>  
+                    </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item text-info" href="temperature.html"><strong>Temperature</strong></a>
+                            <a class="dropdown-item text-info" href="humidity.html"><strong>Humidity</strong></a>
+                            <a class="dropdown-item text-info" href="cloudiness.html"><strong>Cloudiness</strong></a>
+                            <a class="dropdown-item text-info" href="windiness.html"><strong>Windiness</strong></a>
+                        </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-info" href="comparison.html"><strong>Comparison</strong></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-info" href="data.html"><strong>Data</strong></a>
+                </li>
+            </ul>
+            </div>
+        </div>
+      </nav>  
+</head>
+<body style="background-color: rgb(197, 209, 203)">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12 col-md-8">
+                <div class="card"> 
+                    <div class="card-body"> 
+                        <h1 class="text-info">Latitude vs Temperature</h1>
+                        <hr>
+                        <img src="./Resources/assets/images/Fig2.png" alt="Lat vs Humidity" height="60%" width="60%" align="left" alt="figure">
+                        <br>
+                        <br>
+                        <br>
+                        <p>In terms of latitude, there really is not a correlation just by looking at the plotted dots based on the data. 
+                            Further analysis with statistical methods may be needed in order to prove relationship between the latitude
+                            and humidity.
+                        </p>
+
+                        <br>        
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-md-4">
+                <div class="card">
+                        <div class="card-body">                                    
+                            <h1 class="text-info">Visualizations</h1>
+                            <hr>
+
+                            <div class="row" >
+                                <div class="col-md-6"><a href="temperature.html">
+                                    <img src="./Resources/assets/images/Fig1.png" width="100%" alt="temperature png"></a>
+                                </div>
+                                <div class="col-md-6"><a href="humidity.html">
+                                    <img src="./Resources/assets/images/Fig2.png" width="100%" alt="humidity png"></a>
+                                </div>
+                                <div class="col-md-6"><a href="cloudiness.html">
+                                    <img src="./Resources/assets/images/Fig3.png" width="100%" alt="cloudiness png"></a>
+                                </div>
+                                <div class="col-md-6"><a href="windiness.html">
+                                    <img src="./Resources/assets/images/Fig4.png" width="100%" alt="windiness png"></a>
+                                </div>
+                            </div>
+                                
+                        </div>
+                </div>     
+            </div>    
+        </div>
+    </div>
+    </body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</html>
